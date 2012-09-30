@@ -96,6 +96,7 @@ export LESS="-iSn"
 
 #import RVM
 [[ -s "/home/talin/.rvm/scripts/rvm" ]] && source "/home/talin/.rvm/scripts/rvm"
+rvm use 1.9.3
 
 ###set up the fancy history behavior
 

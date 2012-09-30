@@ -1,6 +1,7 @@
 filetype plugin on
 filetype plugin indent on
 set updatetime=1000
+syntax on
 
 set hidden
 set undofile

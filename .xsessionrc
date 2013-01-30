@@ -7,5 +7,4 @@ XMODIFIERS="@im=ibus"
 ibus-daemon -d
 
 pidgin &
-lastfm &
 skype &

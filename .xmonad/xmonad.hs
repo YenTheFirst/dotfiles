@@ -35,5 +35,4 @@ main = do
 		, XMonad.focusFollowsMouse = False
 		, modMask = mod4Mask
 		} `additionalKeys`
-		[   ((mod4Mask, xK_v ), windows copyToAll)
-		, ((mod4Mask, xK_z), spawn "gnome-screensaver-command -l") ]
+		[ ((mod4Mask, xK_z), spawn "gnome-screensaver-command -l") ]

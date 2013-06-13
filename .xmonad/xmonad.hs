@@ -30,6 +30,7 @@ myManageHooks = composeAll
 main = do
 	xmonad $ defaultConfig
 		{manageHook = manageDocks <+> myManageHooks
+		, handleEventHook = fullscreenEventHook
 		, layoutHook = myLayout
 		, XMonad.focusFollowsMouse = False
 		, modMask = mod4Mask

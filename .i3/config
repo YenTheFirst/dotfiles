@@ -110,7 +110,9 @@ bindsym $mod+Shift+J reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+P restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+greater exit
+#hmm. maybe I should make a nagbar version of shutdown/exit?
+bindsym $mod+shift+greater exec ~/.i3/i3-exit.py
+
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

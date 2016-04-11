@@ -105,6 +105,10 @@ bindsym $mod+Shift+asterisk move workspace 8
 bindsym $mod+Shift+parenleft move workspace 9
 bindsym $mod+Shift+parenright move workspace 10
 
+#cycle current workspace to the monitor to the right. This wraps.
+#in a dual-monitor setup, this effectively swaps a workspace between the two monitors.
+bindsym $mod+x move workspace to output right
+
 # reload the configuration file
 bindsym $mod+Shift+J reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)

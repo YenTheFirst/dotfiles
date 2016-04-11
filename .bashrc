@@ -114,3 +114,9 @@ HISTFILESIZE=2000
 export PROMPT_COMMAND="history -a ; ${PROMPT_COMMAND:-:}"
 alias cd=mycd
 mycd $PWD
+
+#set editor to vim
+export EDITOR=vim
+
+export MAILCHECK=30
+export MAIL=/var/spool/mail/talin

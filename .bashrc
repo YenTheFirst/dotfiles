@@ -92,7 +92,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 # good defaults for LESS
-export LESS="-iSn"
+export LESS="-iSnR"
 
 #import RVM
 [[ -s "/home/talin/.rvm/scripts/rvm" ]] && source "/home/talin/.rvm/scripts/rvm"

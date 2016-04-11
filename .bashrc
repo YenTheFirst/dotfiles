@@ -100,7 +100,9 @@ rvm use 1.9.3
 
 ###set up the fancy history behavior
 
-. .bash-functions.sh
+. .bash_cd_hook.sh
+export PROMPT_COMMAND="history -a; check_cd; ${PROMPT_COMMAND:-:}"
+
 # don't put duplicate lines in the history. See bash(1) for more options
 HISTCONTROL=ignoredups:ignorespace
 
@@ -108,12 +110,10 @@ HISTCONTROL=ignoredups:ignorespace
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+#set unlimited history sie
+HISTSIZE=-1
+HISTFILESIZE=-1
 
-export PROMPT_COMMAND="history -a ; ${PROMPT_COMMAND:-:}"
-alias cd=mycd
-mycd $PWD
 
 #set editor to vim
 export EDITOR=vim

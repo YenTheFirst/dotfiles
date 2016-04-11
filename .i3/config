@@ -110,6 +110,9 @@ bindsym $mod+Shift+parenright move workspace 10
 #in a dual-monitor setup, this effectively swaps a workspace between the two monitors.
 bindsym $mod+x move workspace to output right
 
+#screen lock
+bindsym $mod+l exec xscreensaver-command --lock
+
 # reload the configuration file
 bindsym $mod+Shift+J reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
